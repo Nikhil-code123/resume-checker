@@ -2,7 +2,7 @@ import React, { useState, useCallback } from 'react';
 import { useDropzone } from 'react-dropzone';
 
 // ── Use full backend URL so proxy issues don't break the app ──────────────────
-const API_BASE = 'http://localhost:5000';
+const API_BASE = 'https://resume-checker-excg.onrender.com';
 
 const ACCEPTED = {
   'application/pdf': ['.pdf'],
