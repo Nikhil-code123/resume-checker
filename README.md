@@ -1,6 +1,6 @@
 # 🤖 Automated Resume Relevance Check System
 
-AI-powered resume analyzer built with **React** (frontend) + **Node.js/Express** (backend) + **Claude AI** (Anthropic).
+AI-powered resume analyzer built with **React** (frontend) + **Node.js/Express** (backend) + **OpenRouter AI**.
 
 🌐 **Live Demo:** [https://resume-checker-gray.vercel.app/](https://resume-checker-gray.vercel.app/)  
 🔧 **Backend API:** [https://resume-checker-rafl.onrender.com](https://resume-checker-rafl.onrender.com)
@@ -14,6 +14,18 @@ AI-powered resume analyzer built with **React** (frontend) + **Node.js/Express**
 - Skill-by-skill breakdown (matched / partial / missing)
 - Experience & education match ratings
 - Clean, responsive UI
+
+---
+
+## 📸 Screenshots
+
+### Input Form — Enter Job Details & Upload Resume
+![Input Form](https://raw.githubusercontent.com/Nikhil-code123/resume-checker/main/screenshots/images1.png)
+*Enter the job title, required skills, job description, and upload your resume (PDF/DOCX/TXT) or paste the text directly.*
+
+### Analysis Results — AI-Powered Match Report
+![Results Panel](https://raw.githubusercontent.com/Nikhil-code123/resume-checker/main/screenshots/images2.png)
+*View the match percentage, verdict, matched/missing skills breakdown, strengths, and recommendations.*
 
 ---
 
@@ -56,7 +68,7 @@ resume-checker/
 cd backend
 npm install
 cp .env.example .env
-# Edit .env and add your ANTHROPIC_API_KEY
+# Edit .env and add your OPENROUTER_API_KEY
 npm run dev        # or: npm start
 ```
 
@@ -136,11 +148,11 @@ Base URL (production): `https://resume-checker-rafl.onrender.com`
 
 | Variable | Required | Description |
 |----------|----------|-------------|
-| `ANTHROPIC_API_KEY` | ✅ Yes | Your Anthropic API key |
+| `OPENROUTER_API_KEY` | ✅ Yes | Your OpenRouter API key |
 | `PORT` | No | Backend port (default: 5000) |
 | `NODE_ENV` | No | `development` or `production` |
 
-Get your API key at: https://console.anthropic.com
+Get your API key at: https://openrouter.ai/keys
 
 ### Frontend `.env`
 
@@ -162,7 +174,7 @@ REACT_APP_API_BASE=https://resume-checker-rafl.onrender.com
 |-------|-----------|
 | Frontend | React 18, react-dropzone |
 | Backend | Node.js, Express 4 |
-| AI | Anthropic Claude (claude-sonnet-4-6) |
+| AI | OpenRouter AI (claude-sonnet-4-6) |
 | File Parsing | pdf-parse, mammoth |
 | CORS | cors middleware |
 | Rate Limiting | express-rate-limit |
